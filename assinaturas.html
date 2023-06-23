@@ -35,7 +35,7 @@
              
         
         <label for="phone">Telefone:</label>
-        <input type="text" id="phone">
+        <input type="tel" id="phone"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
         
        
         
@@ -55,7 +55,7 @@
           
               
           var signature = " ";
-          signature += " " + name + "<br>";
+          signature += " " + "<b>" + name + "</b>" + "<br>";
           signature += " " + setor + "  -  ";
           signature += " " + filial + "<br>";
           signature += "PABX: " + phone + "<br>";
